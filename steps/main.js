@@ -1,5 +1,6 @@
 
- var test = require(['test', 'Graph'], function (test, Graph) {
+ var test = require(['test', 'Graph', '1'], function (test, Graph, stepOne) {
+  
   
   console.log("required test: ", test)
   console.log("required graph: ", Graph)
@@ -8,7 +9,12 @@
 
   var graph1 = new Graph(canvas1)
 
-  console.log("graph1: ", graph1)
+  var x = [0,1,2,3,4]
+  var y = [0,2,2,3,4]
+
+  graph1.setValues(x,y)
+
+  
 
 });
 

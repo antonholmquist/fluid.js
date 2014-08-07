@@ -7,6 +7,9 @@ http://lorenabarba.com/blog/cfd-python-12-steps-to-navier-stokes/
 v8 implementation
 https://code.google.com/p/v8/source/browse/trunk/benchmarks/navier-stokes.js
 
+For dummies:
+https://mikeash.com/pyblog/fluid-simulation-for-dummies.html
+
 Example WebGL:
 
 http://www.ibiblio.org/e-notes/webgl/gpu/fluid.htm

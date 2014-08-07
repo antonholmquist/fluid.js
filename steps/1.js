@@ -31,26 +31,49 @@ Discretize x in 0.1 intervals from 0 to 2 (count : 21)
 
   return u(n + 1), array with all x
 */
-var step = function(uN, dt, dx, b0, b1, c) {
 
-  var uN1 = []
+define([], function () {
 
-  // Loop through all values
-  for (var i = 0; i < uN.length; i++) {
-    var u = uN[i] - c * dt / dx * (uN[i] - (i > 0 ? uN[i - 1] : b0))
+  var step = function(uN, dt, dx, b0, b1, c) {
 
-    uN1.push(u)
+    var uN1 = []
+
+    // Loop through all values
+    for (var i = 0; i < uN.length; i++) {
+      var u = uN[i] - c * dt / dx * (uN[i] - (i > 0 ? uN[i - 1] : b0))
+
+      uN1.push(u)
+    }
+
+    return uN1
   }
 
-  return uN1
 
-}
+  var test1 = {
+    u0: [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    dt: 0.1,
+    dx: 0.1,
+    b0: 1,
+    b1: 1,
+    c: 1
+  }
+
+  return {
+    step: step,
+
+    test1: test1
+    
+  }
+
+});
 
 
 
+
+/*
 var test = function() {
 
-  var u0 = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  
 
   var dt = 0.1
   var dx = 0.1
@@ -75,4 +98,4 @@ var test = function() {
 }
 
 test();
-
+*/
