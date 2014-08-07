@@ -1,5 +1,11 @@
 fluidjs
 
+University course:
+
+http://lorenabarba.com/blog/cfd-python-12-steps-to-navier-stokes/
+
+v8 implementation
+https://code.google.com/p/v8/source/browse/trunk/benchmarks/navier-stokes.js
 
 Example WebGL:
 
@@ -32,3 +38,14 @@ Solution: u(x,t) = u0(x - xt)
 
 
 Wave propagation, and that means pure convection!
+
+
+Space time discretization
+
+i -> indec of grid in x
+n -> index of grid in t
+
+Numerical scheme
+
+FD in time
+BD in space
