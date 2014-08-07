@@ -54,8 +54,8 @@ var test = function() {
 
   var dt = 0.1
   var dx = 0.1
-  var b0 = 0
-  var b1 = 0
+  var b0 = 1
+  var b1 = 1
   var c = 1
 
   
